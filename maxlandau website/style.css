@@ -1,0 +1,86 @@
+body {
+    background-color: orangered;
+    font-family: monospace;
+    color:blanchedalmond;
+    
+}
+
+@keyframes flyintop{
+    0%{transform:translateY(-100%);}
+    100%{transform:translateY(0%);}
+}
+
+#title{
+    float: left;
+    color:blanchedalmond;
+    font-family: monospace;
+    font-size: larger;
+    padding: 5px;
+    width: 60px;
+    border: 1px solid blanchedalmond;
+    margin: 10px; 
+    transform-origin: left top;
+    animation: flyintop 2s ease-out;
+}
+
+#description{
+    clear: left;
+    display: inline;
+    color: blanchedalmond;
+    font-family: monospace;
+    font-size: medium;
+    width: fit-content;
+}
+
+footer{
+    position: relative;
+    bottom: 30px;
+    margin: 20px;
+    font-size: large;
+}
+
+a:link,a:visited{
+    color:blanchedalmond;
+}
+
+a:hover,a:active{
+    color:darkred;
+}
+
+a{
+    padding:5px;
+    cursor: pointer;
+}
+
+#link-section{
+    margin: 20px;
+}
+
+.section-heading{
+    font-weight: bold;
+}
+
+iframe{
+    background-color: black;
+    border:none;
+    width: 240px;
+    height: 135px;
+}
+
+.videogrid{
+    display:inline-block;
+    padding: 10px;
+}
+
+.songs,.song:visited{
+    margin: 10px;
+    padding: 1px;
+    display: inline-block;
+    border: 1px solid blanchedalmond;
+}
+
+.songs:hover,.songs:active{
+    color:darkred;
+    border: 2px solid darkred;
+    cursor:pointer;
+}
