@@ -1,86 +1,29 @@
 body {
-    background-color: orangered;
-    font-family: monospace;
-    color:blanchedalmond;
-    
+  max-width: 680px;
+  margin: 24px auto;
+  padding: 0 18px;
+  background: #e7e5dc;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
 }
 
-@keyframes flyintop{
-    0%{transform:translateY(-100%);}
-    100%{transform:translateY(0%);}
-}
+h1, h2, h3, p { margin: 0 0 10px; }
+h1 { font-size: clamp(42px, 10vw, 76px); line-height: .9; letter-spacing: -.08em; }
+h2 { margin-top: 34px; font-size: 28px; letter-spacing: -.06em; }
+h3 { margin-top: 20px; font-size: 17px; }
+header { border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #61a948 0 16.66%, #f5cf35 16.66% 33.32%, #ed8b32 33.32% 49.98%, #d94b43 49.98% 66.64%, #9a5da5 66.64% 83.3%, #4d83bd 83.3% 100%) 1; padding: 24px 0 18px; }
+header p { margin: 14px 0 4px; }
+nav { font-size: 14px; }
+a { color: #0000a8; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:visited { color: #674082; }
+a:hover { background: #111; color: #e7e5dc; }
+ul { margin: 0 0 14px; padding-left: 22px; }
+li { padding: 2px 0; }
+section { padding-bottom: 8px; }
+footer { margin-top: 30px; padding: 10px 0 24px; border-top: 2px solid #111; font-size: 13px; }
 
-#title{
-    float: left;
-    color:blanchedalmond;
-    font-family: monospace;
-    font-size: larger;
-    padding: 5px;
-    width: 60px;
-    border: 1px solid blanchedalmond;
-    margin: 10px; 
-    transform-origin: left top;
-    animation: flyintop 2s ease-out;
-}
-
-#description{
-    clear: left;
-    display: inline;
-    color: blanchedalmond;
-    font-family: monospace;
-    font-size: medium;
-    width: fit-content;
-}
-
-footer{
-    position: relative;
-    bottom: 30px;
-    margin: 20px;
-    font-size: large;
-}
-
-a:link,a:visited{
-    color:blanchedalmond;
-}
-
-a:hover,a:active{
-    color:darkred;
-}
-
-a{
-    padding:5px;
-    cursor: pointer;
-}
-
-#link-section{
-    margin: 20px;
-}
-
-.section-heading{
-    font-weight: bold;
-}
-
-iframe{
-    background-color: black;
-    border:none;
-    width: 240px;
-    height: 135px;
-}
-
-.videogrid{
-    display:inline-block;
-    padding: 10px;
-}
-
-.songs,.song:visited{
-    margin: 10px;
-    padding: 1px;
-    display: inline-block;
-    border: 1px solid blanchedalmond;
-}
-
-.songs:hover,.songs:active{
-    color:darkred;
-    border: 2px solid darkred;
-    cursor:pointer;
+@media (max-width: 720px) {
+  body { margin: 12px auto; }
 }
